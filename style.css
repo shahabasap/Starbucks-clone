@@ -1,0 +1,899 @@
+*{
+    font-family:SoDo Sans-light;
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 16px;
+    letter-spacing: -0.1px; 
+    line-height: 24px;
+    color: #212529;
+}
+.container{
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+@font-face {
+    font-family: 'SoDo Sans Semi-Bold';
+    src:url("font/SoDoSans-SemiBold.ttf")
+  }
+@font-face {
+    font-family: 'SoDo Sans-thin';
+    src:url("font/SoDoSans-Thin.ttf")
+  }
+@font-face {
+    font-family: 'SoDo Sans-Regular';
+    src:url("font/SoDoSans-Regular.ttf")
+  }
+@font-face {
+    font-family: 'SoDo Sans-light';
+    src:url("font/SoDoSans-Light.ttf")
+  }
+@font-face {
+    font-family: 'SoDo Sans-Bold';
+    src:url("font/SoDoSans-Bold.ttf")
+  }
+/* ------------------------------------------------------------------------navigation bar-------------------------------------------------------- */
+.nav-bar
+{
+    
+    display: flex;
+    flex-wrap:wrap ;
+    position:fixed;
+    justify-content: space-between;
+    width: 100%;
+    height: 76.6px;
+    border-bottom: 1px solid rgb(184, 171, 171);
+    box-shadow: 1px -5px 14px;
+    z-index: 2;
+   
+}
+.left-nav
+{
+    flex-basis: 50%;
+    text-decoration: none rgb(33, 37, 41);
+   
+}
+.right-nav
+{
+    flex-basis: 50%;
+    text-decoration: none rgb(33, 37, 41);
+   
+}
+.nav-info
+{
+    padding-left: 92px;
+}
+.nav-info span
+{
+    font-family: SoDo Sans-light;
+    font-weight: 500;
+}
+
+.left-nav a{
+    
+    position: relative;
+    top: -3px;  
+    margin-left: 43px;
+    color: #212529;
+    cursor: pointer;
+    word-spacing: 0;
+    font-weight: 100;
+   
+  
+}
+.left-nav a span:hover
+{
+    border-bottom: 4px solid  #1E3932;
+    font-family:SoDo Sans Semi-Bold;
+}
+
+.nav-logo{
+    position: relative;
+    top: 18px;
+    width: 44px;
+   
+    
+}
+.right-nav
+{
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-nav .search-bar input
+{
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: transparent;
+  width: 186px;
+  height: 39px;
+  padding-left: 12px;
+  margin-left: 111px;
+  box-shadow: 1px 2px 8px gray;
+  padding-left: 42px;
+}
+.search-bar
+{
+    margin-left: 96px;
+}
+.search-bar-content
+{
+  position: absolute;
+  right: 527px;
+  bottom: 26px;
+  color: gray;
+ 
+  }
+  .search-bar input::placeholder 
+  {
+    font-size: 12px;
+  }
+
+.user-tag 
+{
+  margin-right: 141px; 
+}
+.user-tag  a{
+    text-decoration: none;
+    color:grey;
+}
+
+                                        /* !!!!!!!!!!!!!!!!!!space!!!!!!!!!!!!!!!!!! */
+.space
+{
+  width: 100%;
+  height: 76.6px;
+}
+/* ----------------------------------------------------------Second Navigation Bar------------------------------------------------------------------------ */
+.second-nav
+{
+   
+   height: 80px;
+   width: 100%;
+   background-color: #1E3932;
+}
+
+.second-nav-container
+{
+  display: flex;
+  align-items: center;
+  height: 78.4px; 
+  width: 96%; 
+  background-color: #1E3932;
+  margin-left: 22px;
+    
+}
+
+.second-nav-container label
+{
+  background-color: #1E3932;
+  color: #ffffff;
+  font-family: SoDo Sans-light;
+  font-weight: 300;
+  font-size: 20px;
+  margin-left: 110px;
+
+ }
+ 
+ 
+.second-nav-container .btn-know
+{
+  width: 93px;
+  border: 2px solid white;
+  border-radius: 15px;
+  font-family: SoDo Sans-Bold;
+  background-color: #1E3932;
+  font-size: 12px;
+  line-height: 18px;
+  height: 35px;
+  color: #fff;
+  margin-left: 820px;
+}
+/* -------------------------------------------------Menu-bar------------------------------------------- */
+.menu-outer
+{
+  width:100%;
+  height: 210px;
+  background-color: #ffffff;
+  padding: 43px 113px;
+  border-bottom: gray;
+  box-shadow: 1px -5px 14px;
+}
+.menu-outer .menu-inner 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 223px;
+  width: 1300px;
+  background-color:#ffffff;
+ 
+}
+.menu-heading
+{
+  font-size: 24px;
+  font-family:SoDo Sans-Bold;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+
+.item  img{
+  width: 108px;
+  border: 1px solid #808080d1;
+  border-radius: 50%;
+  margin-left: 33px;
+  margin-top: 21px;
+  
+}
+
+
+.item{
+  display: block;
+  block-size: 140px;
+  width: 141px;
+
+}
+.item span
+{
+  margin-left: 28px;
+  font-family:SoDo Sans Semi-Bold;
+  font-size: 14px;
+  color: #212529;
+  line-height: 21px;
+ 
+}
+.item-1 span
+{margin-left: 55px;
+}
+.item-2 span
+{margin-left: 64px;
+}
+.item-3 span
+{margin-left: 66px;
+}
+.item-4 span
+{margin-left: 46px;
+}
+.item-5 span
+{margin-left: 34px;
+}
+.item-6 span
+{margin-left: 50px;
+}
+                                                      /* !!!!!!!!!Space!!!!!!! */
+.space1
+{
+  width: 100%;
+  height: 75px;
+}                                                     
+                                                      
+/* ---------------------------------------------------------Special-Offer ------------------------------------------- */
+.celebration-Offer-banner
+{
+  width: 100%;
+  height:252px;
+  background-color: #ffffff;
+}
+.inner-offer-banner
+{
+  display: flex;
+  height:220px;
+  width:1280px;
+  background:url("photos/Rectangle_743_2_5d4f05c086.png");
+  background-size: cover;
+  border: 1px solid #ffffff;
+  position: relative;
+  top: 16px;
+  left: 133px;
+  border-radius: 15px;
+  z-index: 1;
+  
+}
+.celebration-offer-pic 
+{
+  width:100px;
+  height:193.8px;
+  margin-top: 22px;
+  margin-left: 10px;
+  background: transparent;
+}
+
+/* -------------------------------------------------------- */
+.celebration-offer-content
+{
+  display:flex;
+  flex-direction: column;
+  width:807px;
+  height:100%;
+  background: transparent;
+  margin-top: 10px;
+  
+}
+.celebration-offer-content label
+{
+  font-family:SoDo Sans-Regular;
+  background: transparent;
+  margin-top: 10px;
+  margin-left: 61px;
+  font-size:14px;
+}
+.celebration-offer-content span
+{
+  background: transparent;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+.celebration-offer-content .sp-label-1
+{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.celebration-offer-content  .sp-label-2
+{
+  margin-top: 6px;
+  font-size: 12px;
+}
+/* -------------------------------------------------------- */
+
+.celebration-offer-order
+{
+  height: 100%;
+  width: 344px;
+  background-color: transparent;
+}
+.celebration-offer-order input
+{
+  background-color: #00754A;
+  color: #ffffff;
+  width: 184px;
+  border-radius: 123px;
+  height: 43px;
+  margin-top: 150px;
+  margin-left: 139px;
+
+}
+.inner-offer-banner .sp-arrow-right
+{
+  position: absolute;
+  top: 94px;
+  right: -23px;
+  width: 50px;
+  height: 46px;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid #e6e0e0;
+  box-shadow: 1px 1px 3px;
+  background-color: #cccc;
+}
+
+#right-arrow-icon,#left-arrow-icon
+{
+  color: #00754A;
+  margin-top: 14px;
+  background: transparent;
+
+}
+.sp-arrow-left
+{
+  position: absolute;
+  top: 96px;
+  left: -31px;
+  width: 50px;
+  height: 46px;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid #e6e0e0;
+  box-shadow: 1px 1px 3px;
+  background-color: #cccc;}
+  /* ---------------------------------------------------------space------------------------ */
+  .space-3
+  {
+    width: 100%;
+    height: 75px;
+    background-color: #ffffff;
+  }
+     
+ /* --------------------------------------------------------------Latest offer Container---------------------------------------- */
+ .offer-outer-container
+{
+  display: block;
+  width: 100%;
+  height:500px;
+  background:#ffffff
+}
+.offer-outer-container label
+{
+  font-family:SoDo Sans Semi-Bold;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-left: 104px;
+  
+}
+.offer-inner-container
+{
+  display:flex;
+  justify-content: space-between;
+  height: 360px;
+  width: 1320px;
+  background: transparent;
+  position: relative;
+  top: 33px;
+  left: 93px;
+}
+.latest-offer
+{
+  
+  width: 407.7px;
+  height:372px;
+  background:transparent;
+  border: 1px solid #d6cdcd;;
+  border-radius: 20px;
+  box-shadow: 1px 1px 4px;
+  
+}
+
+.latest-offer-pic 
+{
+  height: 167px;
+  width:100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.latest-offer-item1-pic
+{
+
+  background: url("photos/102253.webp");
+  background-size: 447px 269px;
+}
+.latest-offer-item2-pic
+{
+
+  background: url("photos/102257.webp");
+  background-size: contain;
+}
+.latest-offer-item3-pic
+{
+
+  background: url("photos/102260.webp");
+  background-size: 450px 226px;;
+}
+
+
+
+.latest-offer-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height:197.4px;
+  width:100%;
+  background: transparent;
+  padding-top: 23px;
+}
+.latest-offer-content  img{
+  margin-left: 10px;
+}
+.latest-offer-content input
+{
+  background-color: #E6EDEB;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  color: #009966;
+  font-size: 10px;
+}
+.latest-offer-content label
+{
+  font-size: 11px;
+  margin-left: 13px;
+}
+.launcing
+{
+  margin-left: 13px;
+}
+#launch-btn
+{
+  margin-left: 13px;
+}
+#latest-lab-1{
+  font-family: SoDo Sans Semi-Bold;
+  font-size: 14px;
+  font-weight: 500;
+}
+#latest-lab-2{
+  font-family:SoDo Sans-light ;
+  font-size:13.4px;
+  font-weight: 500
+}
+#latest-lab-3{
+  font-size:11px;
+  font-family: SoDo Sans-light;
+}
+#latest-lab-4{
+  font-size:14px;
+  font-weight: 600;
+  font-family:SoDo Sans Semi-Bold;
+}
+.additem-block input
+{
+  margin-left: 224px;
+  background-color: #00754A;
+  color: #ffffff;
+  width: 89px;
+  height: 28px;
+}
+
+
+/* -------------------------------------------------Recommented item------------------------------------------ */
+.recommends-outer-item
+{
+  width: 100%;
+  height:316px;
+  background-color: #cccc;
+
+}
+.recommends-inner-item
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 70%;
+  position: relative;
+  top: 72px;
+  left: 123px;
+  background: transparent;
+  
+
+}
+.recommends-item-left
+{
+ 
+  height: 160px;
+  width: 409.3px;
+  border: 1px solid rgb(172, 159, 159);
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+.recommends-item-right
+{
+  height: 160px;
+  width: 409.3px;
+  border: 1px solid rgb(172, 159, 159);
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin-right: 380px
+
+}
+.recommends-item-left-inner
+{
+  display: flex;
+  justify-content: space-around;
+  width: 365px;
+  height: 110px;
+ background: transparent;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.heading-4
+{
+  font-family:SoDo Sans Semi-Bold;
+  font-size:24px;
+  font-weight:500 ;
+  background: transparent;
+  position: relative;
+  top: 74px;
+  left: 141px;
+}
+.recommends-item-left-pic
+{
+  
+  height: 90px;
+  width: 90px;
+  margin-left: 29px;
+  margin-top: 16px;
+  background: url("photos/112570.webp");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  
+}
+.recommends-item-right-pic
+{
+  height: 90px;
+  width: 90px;
+  margin-left: 29px;
+  margin-top: 16px;
+  background: url("photos/112570.webp");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+}
+
+
+/* .recommends-item-left-pic img
+{
+  border: 2 px #1a1818;
+  border-radius: 15px;
+  width: 80px;
+  height:80px;
+
+} */
+.recommends-item-left-content
+{
+  height: 92px;
+  width: 279px;
+background: transparent;
+  margin-top: 9px;
+  margin-right:-57px;
+}
+
+
+.recommends-item-left-content label
+{
+  font-size: 10px;
+background: transparent;}
+.Add-item-recommend
+{
+  display: flex;
+  align-items: center;
+  font-family:SoDo Sans-Bold;
+  height:32px;
+  width:370px;
+  background: transparent;
+  margin-top:5px;
+  margin-left:10px;
+}
+.Add-item-recommend input
+{
+  background-color: #00754A;
+  font-size:12px;
+  color:#ffffff;
+  width: 89px;
+  height: 28px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  margin-left: 198px;
+}
+.Add-item-recommend label
+{
+  margin-left: 10px;
+}
+#recomments-label1
+{
+  font-size:14px;
+  font-weight: 500;
+  font-family:SoDo Sans Semi-Bold;
+}
+#recomments-label2
+{
+  font-size:10px;
+  font-family:SoDo Sans-Regular ;
+  font-weight:500;
+
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!space!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.learnmore-space
+{
+  width: 100%;
+  height: 75px;
+}
+/* -------------------------------------------------------Learn More------------------------------------------------------ */
+.Lern-more
+{
+  width: 100%;
+  height: 496.4px;
+  background-color: #cccc;
+  padding-top: 45px;
+}
+
+#Lern-more-lab1
+{
+  font-size: 24px;
+  font-weight: 500;
+  font-family:SoDo Sans Semi-Bold;
+  background: transparent;
+  margin-left: 104px;
+}
+
+.Lern-more-inner
+{
+  height:372px;
+  width:1320px;
+  background:url("photos/C_A_F_E_BLOG_WEB_5e2635de8d.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 15px;
+  left: 114px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  
+.Lern-more-inner :hover
+{
+  opacity: 2.0;
+}
+
+}
+.Lern-more-inner-content
+{
+  height: 162px;
+  width: 80%;
+  background: transparent;
+  position: absolute;
+  top: 202px;
+  left: 157px;
+  cursor: pointer;
+}
+#Lern-more-btn1
+{
+  font-family: SoDo Sans Semi-Bold;
+    font-size: 9px;
+    width: 78.3px;
+    height: 24.5px;
+    color: #009966;
+    border: 1px solid #009966;
+    border-radius: 7px;
+    background-color: #E6EDEB;
+    text-align: center;
+    margin-left: 42px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+.Lern-more-inner-content h1{
+  background-color: transparent;
+  font-family:SoDo Sans Semi-Bold;
+  font-size:28px;
+  font-weight:500;
+  color:#ffffff;
+  
+}
+.Lern-more-inner-content label
+{
+  background-color: transparent;
+  font-family:SoDo Sans-light;
+  font-size:14px;
+  color:#ffffff;
+  margin-top: 10px;
+}
+.Lern-more-inner-content input
+{
+  background-color: #ffffff;
+  font-family:SoDo Sans Semi-Bold;
+  font-size:14px;
+  margin-top: 10px;
+  height: 32px;
+  width: 200px;
+  border: 1px solid #ffff;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
+    /* ---------------------------------------------------------------------Footer--------------------------------------------------- */
+.footer-outer{
+  width: 100%;
+  height: 612.4px;
+  background-color: #0E382C;
+}
+.inner-footer
+{
+  display: grid;
+  grid-template-columns: 219.9px 219.9px 219.9px 219.9px 219.9px 219.9px;
+  grid-template-rows:80% 20%;
+  height: 397.4px;
+  width:1320px;
+  position: relative;
+  top: 118px;
+  left: 97px;
+  background: transparent;
+  
+ 
+
+}
+.footer-logo
+{
+  width:62px;
+  margin-left: 25px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+.social-media-icons{
+  display: inline;
+  background: transparent;
+}
+.social-media-icons img{
+
+ width:25px;
+  margin-left: 10px;
+  background: transparent;
+  border: 1px solid #ffff;
+  border-radius: 6px;
+  
+}
+.inner-footer div
+{
+  margin-left: 10px;
+
+}
+.inner-footer div h2{
+  background: transparent;
+  font-family: SoDo Sans Semi-Bold;
+  font-size:18px;
+  font-weight:500;
+  color: #ffffff;
+}
+.inner-footer div span{
+  background: transparent;
+  font-family:SoDo Sans-light;
+  font-size:14px;
+  color: #ffffff;
+}
+.box-2,.box-3,.box-4,.box-5,.box-6
+{
+  background: transparent;
+}
+.box-6 img{
+  border: 1px solid #ffff;
+  border-radius: 16px;
+}
+.company-info
+{
+  display: block;
+  width: 85%;
+  height: 75px;
+  background: transparent;
+  margin-left: 108px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ffffff;
+  
+}
+.company-info span{
+  margin-left: 10px;
+  font-size: 12px;
+  font-family:SoDo Sans-light;
+  color:#ffffff;
+  background: transparent;
+  
+}
+.company-info label{
+  margin-left: 630px;
+  font-size: 9px;
+  font-family: SoDo Sans-light;
+  color: #ffffff;
+  background: transparent;
+}
+
+  
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
